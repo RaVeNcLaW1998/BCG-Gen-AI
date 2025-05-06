@@ -1,0 +1,43 @@
+How It Works
+
+This chatbot is a simple rule-based assistant built in Python. It reads financial data from a CSV file (data.csv) containing metrics for Microsoft, Tesla, and Apple from 2022 to 2025. The chatbot processes predefined natural-language queries and returns relevant insights using pandas for data handling.
+
+The Streamlit app (streamlit_app.py) provides an interactive interface where users can type questions and view responses styled in a conversational format.
+
+
+Predefined Queries It Can Answer
+
+1.Total Financials
+
+What is the total revenue?
+
+What is the average net income per company?
+
+2.Trends & Changes
+
+How has net income changed over the last year?
+
+What is the trend in operating cash flow for Apple?
+
+3.Comparative Insights
+
+What year had the highest revenue for each company?
+
+What is the debt ratio for each company in the latest year?
+
+Specific Financial Snapshot
+
+Show me financials for [Company] [Year]
+
+Example: Show me financials for Tesla 2024
+
+
+Limitations
+
+Does not handle free-form or complex natural language questions
+
+Cannot respond to queries not explicitly predefined
+
+Cannot fetch live financial data (offline only)
+
+Only supports data present in data.csv (must be formatted correctly)
